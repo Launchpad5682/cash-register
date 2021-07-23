@@ -28,7 +28,6 @@ function checkChange(bill, cash) {
 function App() {
   const [btnNext, setBtnNext] = useState(true);
   const [cashdiv, setCashdiv] = useState(false);
-  const [checkBtn, setCheckBtn] = useState(false);
   const [cashChange, setCashChange] = useState(false);
 
   // variables
@@ -49,7 +48,6 @@ function App() {
     } else {
       setBtnNext(false);
       setCashdiv(true);
-      setCheckBtn(true);
     }
   }
 
@@ -86,7 +84,6 @@ function App() {
     setCashdiv(false);
     setChangeList(false);
     setChangeMessage(false);
-    setCheckBtn(false);
     setInvalidCash(false);
     setReset(false);
   }
